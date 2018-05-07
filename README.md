@@ -56,7 +56,7 @@ function formatDuration (seconds) {
     
 }
 ```
-##Coordinates Validator
+## Coordinates Validator
 https://www.codewars.com/kata/5269452810342858ec000951
 ```js
 function isValidCoordinates(coordinates){
