@@ -2,10 +2,11 @@ This is not gonna be fun.
 
 I'd rather be working on my game.
 
+
 TODO: organize this
 
 https://www.codewars.com/kata/52742f58faf5485cae000b9a/train/javascript
-
+```js
 function formatDuration (seconds) {
   if(seconds == 0) {
     return 'now'
@@ -54,3 +55,43 @@ function formatDuration (seconds) {
     return clean.join(', ') + ' and ' + last
     
 }
+```
+##Coordinates Validator
+https://www.codewars.com/kata/5269452810342858ec000951
+```js
+function isValidCoordinates(coordinates){
+  if (coordinates.match(/[a-z]/i)) {
+    return false
+  }
+  if(coordinates.includes('- ')) {
+    return false
+  }
+//   let arr = coordinates.split(' ').join('').split('N').join('').split('E').join('').split(',')
+  let arr = coordinates.split(' ').join('').split(',')
+  if(arr.length > 2) {
+    return false
+  }
+  
+  let latitude = Number(arr[0])
+  let longitude = Number(arr[1])
+  
+  console.log(coordinates)
+  console.log(arr)
+  console.log(arr[0], latitude)
+  console.log(arr[1], longitude)
+  if(latitude < -90 || 90 < latitude) {
+    console.log('lat sux')
+    return false
+  }
+  if(longitude < -180 || 180 < longitude) {
+    console.log('lon sux')
+    return false
+  }
+  if(isNaN(latitude) || isNaN(longitude)) {
+    console.log('is nan, returning false')
+    return false
+  }
+  console.log('is valid')
+  return true;
+}
+```
