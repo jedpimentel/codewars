@@ -1,7 +1,7 @@
-This is not gonna be fun.
-
-I'd rather be working on my game.
-
+stuff:
+https://github.com/bpesquet/thejsway
+https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70
+https://zellwk.com/blog/crud-express-mongodb/
 
 TODO: organize this
 
