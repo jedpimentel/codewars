@@ -1,6 +1,9 @@
-stuff:
+Leon said to do a codewars 'rankup' challenge each day, and to go through these:
+
 https://github.com/bpesquet/thejsway
+
 https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70
+
 https://zellwk.com/blog/crud-express-mongodb/
 
 TODO: organize this
