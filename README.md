@@ -6,8 +6,8 @@ https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosa
 
 https://zellwk.com/blog/crud-express-mongodb/
 
-TODO: organize this
 
+## Human readable duration format
 https://www.codewars.com/kata/52742f58faf5485cae000b9a/train/javascript
 ```js
 function formatDuration (seconds) {
@@ -96,5 +96,27 @@ function isValidCoordinates(coordinates){
   }
   console.log('is valid')
   return true;
+}
+```
+
+## Pyramid Slide Down
+https://www.codewars.com/kata/551f23362ff852e2ab000037/train/javascript
+```js
+function longestSlideDown (pyramid) {
+  let oldPyramid = pyramid.slice()
+  let newPyramid = []
+  
+  while(oldPyramid.length) {
+    newPyramid.unshift(oldPyramid.pop());
+    if(newPyramid.length > 1) {
+      let topRow = newPyramid[0];
+      let secondRow = newPyramid[1];
+      for(let i = 0; i < topRow.length; i++) {
+        topRow[i] += Math.max(secondRow[i], secondRow[i + 1]);
+      }
+    }
+  }
+  
+  return newPyramid[0][0];
 }
 ```
