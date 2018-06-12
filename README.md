@@ -6,6 +6,11 @@ https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosa
 
 https://zellwk.com/blog/crud-express-mongodb/
 
+w4 pre-learning
+https://youtu.be/1IsL6g2ixak
+https://youtu.be/7YcW25PHnAA
+https://youtu.be/pKd0Rpw7O48
+
 
 ## Human readable duration format
 https://www.codewars.com/kata/52742f58faf5485cae000b9a/train/javascript
